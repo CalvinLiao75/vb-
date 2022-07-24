@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C971694-E1BD-4982-B823-32851447C181}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>足球測試.My.MyApplication</StartupObject>
+    <RootNamespace>足球測試</RootNamespace>
+    <AssemblyName>足球測試</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>足球測試.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>足球測試.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Shin 2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bas1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\足球.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0014.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0010.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0013.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_00141.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0015.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0016.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0017.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0018.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_0019.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bas2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bas11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1192335521-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nBnauMWZ3YTOkVmN4MjM5ImZ0UWMwQ3Lt92Yuc2cthWcuw2cz5SMw9yL6MHc0RHa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WP-Statistics流量統計外掛.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\足球1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蠟筆小新.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_00131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nBnauMWZ3YTOkVmN4MjM5ImZ0UWMwQ3Lt92Yuc2cthWcuw2cz5SMw9yL6MHc0RHa1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200516_0010.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_00111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_00091.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\黑.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\神奇寶貝球.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\神奇寶貝球1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\排球.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pr4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_00031.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_00041.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蠟筆小新%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蠟筆小新%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penman.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\一般的.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\球1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\球2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\球3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\鑽石的.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\排行榜.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\遊戲說明.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\封底.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\一般.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\血量.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\計時.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\排行榜喔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\無敵 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\無敵1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\遊戲說明喔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\鑽石.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\鑽石喔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\箱子.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Love.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Love.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Love1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\排球-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\計時-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ç__3-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\神奇寶貝球1_1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golf1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golf1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_00041_1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2020328_200509_00031-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\足球-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bas1-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pr4-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\黑-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form1bg12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\norm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dmd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redmute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redmute1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nomr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muttt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BGM.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3r5n0002r02s3o209s59.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moon_PNG52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5o5p00058q7372snq575 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmpf.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\580b585b2edbce24c47b2b90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kindpng_46179.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kindpng_46179 - 複製.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123 %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sad.wav" />
+    <None Include="Resources\123grey.jpg" />
+    <None Include="Resources\shin.png" />
+    <None Include="Resources\001 %281%29 grey.jpg" />
+    <None Include="Resources\OP.wav" />
+    <None Include="Resources\daily.wav" />
+    <None Include="Resources\goodw.wav" />
+    <None Include="Resources\OP2.wav" />
+    <None Include="Resources\qg.png" />
+    <None Include="Resources\qgb.png" />
+    <None Include="Resources\qb.png" />
+    <None Include="Resources\win.wav" />
+    <None Include="Resources\054101015D91535AB09CD0918D269C12.jpg" />
+    <None Include="Resources\054101015D91535AB09CD0918D269C121.jpg" />
+    <None Include="Resources\001 %281%29 %281%29.jpg" />
+    <None Include="Resources\f3bg.jpg" />
+    <None Include="Resources\baseball.jpg" />
+    <None Include="Resources\golf1-removebg-preview.jpg" />
+    <None Include="Resources\神奇寶貝球1_1_-removebg-preview.jpg" />
+    <None Include="Resources\排球-removebg-preview.jpg" />
+    <None Include="Resources\dball.jpg" />
+    <None Include="Resources\pngwing.com.jpg" />
+    <None Include="Resources\moon_PNG52.jpg" />
+    <None Include="Resources\580b585b2edbce24c47b2b90.jpg" />
+    <None Include="Resources\580b585b2edbce24c47b2b901.jpg" />
+    <None Include="Resources\足球1.jpg" />
+    <None Include="Resources\8ball.jpg" />
+    <None Include="Resources\golf1-removebg-preview1.jpg" />
+    <None Include="Resources\dis.jpg" />
+    <None Include="Resources\dis1.jpg" />
+    <None Include="Resources\discoballc_hjr3y4c8.gif" />
+    <None Include="Resources\F4.wav" />
+    <None Include="Resources\win2.wav" />
+    <None Include="Resources\moon.gif" />
+    <None Include="Resources\ezgif.com-crop.gif" />
+    <None Include="Resources\ezgif.com-crop %281%29.gif" />
+    <None Include="Resources\ezgif.com-crop %282%29.gif" />
+    <None Include="Resources\ezgif.com-crop %283%29.gif" />
+    <None Include="Resources\win3.wav" />
+    <None Include="Resources\b40b5aac54734854a2c97d52923c2b05.png" />
+    <None Include="Resources\form1bg122.png" />
+    <None Include="Resources\baseball.gif" />
+    <None Include="Resources\golf.gif" />
+    <None Include="Resources\Sphere_rotating_transparency.gif" />
+    <None Include="Resources\greenss.gif" />
+    <None Include="Resources\earth.gif" />
+    <None Include="Resources\qllr7e.gif" />
+    <None Include="Resources\ezgif.com-crop1.gif" />
+    <None Include="Resources\sh.gif" />
+    <None Include="Resources\ezgif.com-crop %281%291.gif" />
+    <None Include="Resources\ezgif.com-crop %282%291.gif" />
+    <None Include="Resources\tumblr_nyuryoFbYi1uccnfoo3_250.gif" />
+    <None Include="Resources\Snowman.png" />
+    <None Include="Resources\s.png" />
+    <None Include="Resources\333299974_m.jpg" />
+    <None Include="Resources\form1bg1.png" />
+    <None Include="Resources\333299974_m %281%29.jpg" />
+    <None Include="Resources\s1.png" />
+    <None Include="Resources\f1title.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\min.png" />
+    <Content Include="Shin 2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
